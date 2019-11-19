@@ -2,9 +2,13 @@
   "name": "react-prismjs",
   "version": "1.0.0",
   "description": "React syntax highlighter using Prism.js",
-  "main": "index.js",
+  "main": "dist/react-prismjs.js",
+  "module": "dist/react-prismjs.esm.js",
+  "browser": "dist/react-prismjs.umd.js",
   "scripts": {
     "commit": "git-cz",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
     "lint": "eslint .",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\" \"!dist/**\"",
     "test": "jest"
@@ -26,6 +30,8 @@
   },
   "homepage": "https://github.com/versant-digital/react-prismjs#readme",
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "babel-eslint": "^10.0.3",
@@ -45,6 +51,10 @@
     "husky": "^3.1.0",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
+    "rollup": "^1.27.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "semantic-release": "^15.13.31"
   },
   "config": {
