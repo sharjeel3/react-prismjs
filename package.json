@@ -1,0 +1,51 @@
+{
+  "name": "react-prismjs",
+  "version": "1.0.0",
+  "description": "React syntax highlighter using Prism.js",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/versant-digital/react-prismjs.git"
+  },
+  "keywords": [
+    "react",
+    "prismjs",
+    "syntax",
+    "highlight"
+  ],
+  "author": "Sharjeel Ahmad <sharjeel@versant.digital> (https://versant.digital)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/versant-digital/react-prismjs/issues"
+  },
+  "homepage": "https://github.com/versant-digital/react-prismjs#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "cz-customizable": "^6.2.0",
+    "husky": "^3.1.0",
+    "semantic-release": "^15.13.31"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./cz.config.js"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "conventional-commit-types": "^2.3.0"
+  }
+}
