@@ -1,5 +1,12 @@
 module.exports = {
-  extends: ['standard', 'standard-react', 'plugin:import/errors', 'plugin:import/warnings', 'plugin:prettier/recommended'],
+  extends: [
+    'standard',
+    'standard-react',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:jest/recommended',
+    'plugin:prettier/recommended'
+  ],
   settings: {
     react: {
       pragma: 'React',

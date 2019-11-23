@@ -22,10 +22,11 @@ const getUmdConfig = (isProduction = false) => ({
     file: isProduction ? pkg.browser.replace('.js', '.min.js') : pkg.browser,
     format: 'umd',
     globals: {
-      react: 'React'
+      react: 'React',
+      'react-dom': 'ReactDOM'
     }
   },
-  external: ['react'],
+  external: ['react', 'react-dom'],
   plugins: [...commonPlugins, isProduction && terser({})]
 });
 
@@ -42,7 +43,7 @@ export default [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' }
     ],
-    external: ['react'],
+    external: ['react', 'react-dom'],
     plugins: [...commonPlugins]
   }
 ];
