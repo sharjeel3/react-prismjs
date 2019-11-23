@@ -12,10 +12,7 @@ export default [
       file: pkg.browser,
       format: 'umd',
       globals: {
-        react: 'React',
-        'react-dom': 'ReactDOM',
-        prismjs: 'Prism',
-        'prop-types': 'PropTypes'
+        react: 'React'
       }
     },
     external: ['react'],
