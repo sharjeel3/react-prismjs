@@ -7,10 +7,7 @@
   "module": "esm/index.js",
   "scripts": {
     "commit": "git-cz",
-    "build:umd": "rollup -c",
-    "build:commonjs": "cross-env BABEL_ENV=commonjs babel --plugins @babel/plugin-transform-react-jsx src --out-dir lib",
-    "dev:commonjs": "cross-env BABEL_ENV=commonjs babel --watch src --out-dir lib",
-    "build": "npm run build:commonjs && npm run build:umd",
+    "build": "rollup -c",
     "dev": "rollup -c -w",
     "lint": "eslint .",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\" \"!dist/**\"",
@@ -76,6 +73,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-terser": "^5.1.2",
     "semantic-release": "^15.13.31"
   },
   "config": {
