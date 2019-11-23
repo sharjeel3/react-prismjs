@@ -2,12 +2,15 @@
   "name": "react-prismjs",
   "version": "1.0.0",
   "description": "React syntax highlighter using Prism.js",
-  "main": "dist/react-prismjs.js",
-  "module": "dist/react-prismjs.esm.js",
-  "browser": "dist/react-prismjs.umd.js",
+  "main": "lib/index.js",
+  "browser": "dist/react-prismjs.js",
+  "module": "esm/index.js",
   "scripts": {
     "commit": "git-cz",
-    "build": "rollup -c",
+    "build:umd": "rollup -c",
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel --plugins @babel/plugin-transform-react-jsx src --out-dir lib",
+    "dev:commonjs": "cross-env BABEL_ENV=commonjs babel --watch src --out-dir lib",
+    "build": "npm run build:commonjs && npm run build:umd",
     "dev": "rollup -c -w",
     "lint": "eslint .",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\" \"!dist/**\"",
@@ -23,6 +26,12 @@
     "syntax",
     "highlight"
   ],
+  "files": [
+    "dist",
+    "lib",
+    "src",
+    "esm"
+  ],
   "author": "Sharjeel Ahmad <sharjeel@versant.digital> (https://versant.digital)",
   "license": "MIT",
   "bugs": {
@@ -30,12 +39,17 @@
   },
   "homepage": "https://github.com/versant-digital/react-prismjs#readme",
   "devDependencies": {
+    "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-react-jsx": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "babel-eslint": "^10.0.3",
     "commitizen": "^4.0.3",
+    "conventional-commit-types": "^2.3.0",
+    "cross-env": "^6.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "cz-customizable": "^6.2.0",
     "eslint": "^6.6.0",
@@ -47,14 +61,18 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.1.0",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
     "rollup": "^1.27.2",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
     "semantic-release": "^15.13.31"
   },
   "config": {
@@ -71,6 +89,10 @@
     }
   },
   "dependencies": {
-    "conventional-commit-types": "^2.3.0"
+    "prismjs": "^1.17.1",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.6"
   }
 }
