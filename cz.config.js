@@ -8,5 +8,6 @@ const types = Object.keys(conventionalCommitTypes).map(type => ({
 
 module.exports = {
   types,
-  upperCaseSubject: true
+  upperCaseSubject: true,
+  allowBreakingChanges: ['feat', 'fix']
 };
