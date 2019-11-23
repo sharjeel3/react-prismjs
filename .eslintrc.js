@@ -3,8 +3,13 @@ module.exports = {
   settings: {
     react: {
       pragma: 'React',
-      version: '16.11.0'
+      version: '16.12.0'
     }
+  },
+  plugins: ["react-hooks"],
+  rules: {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   parser: 'babel-eslint'
 }
