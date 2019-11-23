@@ -14,7 +14,9 @@
     "dev": "rollup -c -w",
     "lint": "eslint .",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\" \"!dist/**\"",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release-dry": "semantic-release --dry-run",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
