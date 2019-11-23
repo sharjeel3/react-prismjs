@@ -4,6 +4,16 @@ import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
 import postcss from 'rollup-plugin-postcss';
 
+const commonPlugins = [
+  resolve(),
+  postcss({}),
+  babel({
+    exclude: ['node_modules/**'],
+    presets: ['@babel/preset-env', '@babel/preset-react']
+  }),
+  commonjs()
+];
+
 export default [
   {
     input: 'src/index.js',
@@ -16,15 +26,7 @@ export default [
       }
     },
     external: ['react'],
-    plugins: [
-      resolve(),
-      postcss({}),
-      babel({
-        exclude: ['node_modules/**'],
-        presets: ['@babel/preset-env', '@babel/preset-react']
-      }),
-      commonjs()
-    ]
+    plugins: [...commonPlugins]
   },
   {
     input: 'src/index.js',
@@ -33,12 +35,6 @@ export default [
       { file: pkg.module, format: 'es' }
     ],
     external: ['react'],
-    plugins: [
-      babel({
-        exclude: ['node_modules/**'],
-        presets: ['@babel/preset-env', '@babel/preset-react']
-      }),
-      postcss({})
-    ]
+    plugins: [...commonPlugins]
   }
 ];
