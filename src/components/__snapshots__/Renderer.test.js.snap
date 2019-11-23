@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renderer matches snapshot 1`] = `
+<pre
+  className="language-javascript"
+>
+  <code
+    className="language-javascript"
+  >
+    <span
+      className="token keyword"
+    >
+      const
+    </span>
+     message 
+    <span
+      className="token operator"
+    >
+      =
+    </span>
+    <span
+      className="token string"
+    >
+      "test"
+    </span>
+    <span
+      className="token punctuation"
+    >
+      ;
+    </span>
+    
+
+  
+    <span
+      className="token keyword"
+    >
+      const
+    </span>
+    <span
+      className="token function-variable"
+    >
+      sayIt
+    </span>
+    <span
+      className="token operator"
+    >
+      =
+    </span>
+     
+    <span
+      className="token punctuation"
+    >
+      (
+    </span>
+    <span
+      className="token punctuation"
+    >
+      )
+    </span>
+     
+    <span
+      className="token operator"
+    >
+      =&gt;
+    </span>
+     
+    <span
+      className="token punctuation"
+    >
+      {
+    </span>
+    
+    
+    <span
+      className="token keyword"
+    >
+      return
+    </span>
+     message
+    <span
+      className="token punctuation"
+    >
+      ;
+    </span>
+    
+  
+    <span
+      className="token punctuation"
+    >
+      }
+    </span>
+    <span
+      className="token punctuation"
+    >
+      ;
+    </span>
+  </code>
+</pre>
+`;
