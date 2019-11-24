@@ -2,6 +2,11 @@
 
 Thank for your interest in contributing to open source. We had a great experience writing this open source software. We believe you will feel the same after your contribution.
 
+## Some basic information
+
+All contributions require that you agree to our [code of conduct](https://github.com/versant-digital/react-prismjs/blob/master/CODE_OF_CONDUCT.md). 
+Please remember that others are contributing their own time for free when working on open source projects. Please be nice and respectful to others at all times.
+
 ## Guidelines for Issues and Questions
 
 Before creating a new issue, please check the [issue tracker](https://github.com/versant-digital/react-prismjs/issues) to make sure someone else hasn't already raised the same issue.
@@ -66,6 +71,8 @@ npm run format
 ``` 
 
 ### Sending Pull Requests
+
+Please make sure there are no lint, formatting or unit testing errors. <br />
 
 Please follow the pull request template and provide as much information as possible. <br />
 
