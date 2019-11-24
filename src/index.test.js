@@ -1,3 +1,4 @@
+/* eslint jest/expect-expect: 0 */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactPrismJS from './index';
