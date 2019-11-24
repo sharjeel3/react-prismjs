@@ -12,6 +12,7 @@
     "lint": "eslint .",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\" \"!dist/**\"",
     "test": "jest",
+    "test:watch": "npm test -- --watch",
     "semantic-release-dry": "semantic-release --dry-run",
     "semantic-release": "semantic-release"
   },
