@@ -14,7 +14,7 @@
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "semantic-release-dry": "semantic-release --dry-run",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release && npm publish"
   },
   "repository": {
     "type": "git",
