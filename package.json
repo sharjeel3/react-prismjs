@@ -1,6 +1,6 @@
 {
   "name": "react-prismjs",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "React syntax highlighter using Prism.js",
   "main": "lib/index.js",
   "browser": "dist/react-prismjs.js",
