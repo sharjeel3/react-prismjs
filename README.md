@@ -21,14 +21,14 @@ or
 yarn add react-prismjs
 ```
 
-You can get an UMD build from [unpkg](https://unpkg.com/) CDN using following URLs if you are not using npm or yarn.
+You can get the latest UMD build from [unpkg](https://unpkg.com/) CDN using following URLs if you are not using npm or yarn.
 
 ```
-https://unpkg.com/
+https://unpkg.com/@versant-digital/react-prismjs/dist/react-prismjs.js
 ```
 or minified version is here
 ```
-https://unpkg.com/
+https://unpkg.com/@versant-digital/react-prismjs/dist/react-prismjs.min.js
 ```
 
 Please note that `react-prismjs` requires React 16.8.6 or above.
