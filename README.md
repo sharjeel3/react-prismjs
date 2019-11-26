@@ -60,10 +60,47 @@ export const MyCode = () => {
 
 `react-prismjs` accepts two props:
 
-| Props                                                 |                                       Comments                                       |
-|-------------------------------------------------------|:------------------------------------------------------------------------------------:|
-| `language` <br /> Required <br /> Default: javascript | Possible values are:<br /> * javascript* css* html* svg* xml* markup                       |
-| `theme` <br />  Optional                              | Possible values are:<br /> * coy* dark* funky* okaidia* solarizedlight* tomorrow* twilight |
+<table>
+    <tbody>
+        <tr>
+            <th>Props</th>
+            <th>Comments</th>
+        </tr>
+        <tr>
+            <td>
+                <b>language</b> - Required <br /> Default: javascript
+            </td>
+            <td>
+                Possible values are below
+                <ul>
+                    <li>javascript</li>
+                    <li>css</li>
+                    <li>html</li>
+                    <li>svg</li>
+                    <li>xml</li>
+                    <li>markup</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>theme</b> - Optional
+            </td>
+            <td>
+                Possible values are below
+                <ul>
+                    <li>coy</li>
+                    <li>dark</li>
+                    <li>funky</li>
+                    <li>okaidia</li>
+                    <li>solarizedlight</li>
+                    <li>tomorrow</li>
+                    <li>twilight</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
 ## Limitation
