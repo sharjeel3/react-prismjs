@@ -14,11 +14,11 @@ This module uses [PrismJS](https://prismjs.com/) for syntax highlighting functio
 Install `react-prismjs` using `npm` or `yarn`
 
 ```
-npm install react-prismjs
+npm install @versant-digital/react-prismjs
 ```
 or
 ```
-yarn add react-prismjs
+yarn add @versant-digital/react-prismjs
 ```
 
 You can get the latest UMD build from [unpkg](https://unpkg.com/) CDN using following URLs if you are not using npm or yarn.
@@ -37,7 +37,7 @@ Please note that `react-prismjs` requires React 16.8.6 or above.
 
 ```javascript
 import React from 'react';
-import ReactPrism from 'react-prismjs';
+import ReactPrism from '@versant-digital/react-prismjs';
 
 const code = `const message = 'test';
 
