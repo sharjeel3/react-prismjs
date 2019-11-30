@@ -58,7 +58,7 @@ export const MyCode = () => {
 
 ## Options
 
-`react-prismjs` accepts two props:
+`react-prismjs` accepts one prop mentioned below:
 
 <table>
     <tbody>
@@ -79,23 +79,6 @@ export const MyCode = () => {
                     <li>svg</li>
                     <li>xml</li>
                     <li>markup</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <b>theme</b> - Optional
-            </td>
-            <td>
-                Possible values are below
-                <ul>
-                    <li>coy</li>
-                    <li>dark</li>
-                    <li>funky</li>
-                    <li>okaidia</li>
-                    <li>solarizedlight</li>
-                    <li>tomorrow</li>
-                    <li>twilight</li>
                 </ul>
             </td>
         </tr>
