@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { loadStyles } from './loadStyles';
+require(`prismjs/themes/prism-okaidia.css`);
 
-export const Renderer = ({ tokens, theme, language }) => {
-  useEffect(() => {
-    loadStyles(theme);
-  }, [theme]);
-
+export const Renderer = ({ tokens, language }) => {
   return (
     <pre className={`language-${language}`}>
       <code className={`language-${language}`}>
@@ -26,6 +22,5 @@ export const Renderer = ({ tokens, theme, language }) => {
 
 Renderer.propTypes = {
   tokens: PropTypes.array.isRequired,
-  language: PropTypes.string.isRequired,
-  theme: PropTypes.string
+  language: PropTypes.string.isRequired
 };
